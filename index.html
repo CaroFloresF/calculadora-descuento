@@ -31,13 +31,22 @@ body{
 
 .input-rojo{
     width:100%;
-    padding:10px;
+    padding:12px;
     border:1px solid red;
-    border-radius:5px;
-    min-height:60px;
+    border-radius:8px;
+    color: #ff3b30;
+    min-height:70px;
     resize:none;
     font-size:16px;
+    font-family: inherit;
+    resize: none;
+    background-color:#fff;
     box-sizing:border-box;
+}
+.input-rojo::placeholder{
+    color:#ff3b30;
+    opacity: 1;
+
 }
 }
 input,select,button{
@@ -62,8 +71,9 @@ input,select,button{
 id="descuentoPOS"
 class="input-rojo"
 placeholder="Valor de descuento POS
-(lo que sale en rojo en el POS)">
-</textarea>
+(lo que sale en rojo en el POS)"
+rows="2"
+></textarea>
 
 <select id="opcion">
     <option value="1">Ingresar % descuento a respetar </option>
